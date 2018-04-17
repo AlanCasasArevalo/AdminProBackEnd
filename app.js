@@ -32,7 +32,6 @@ var searchRoutes = require('./routes/search');
 var uploadRoutes = require('./routes/upload');
 var imagesRoutes = require('./routes/images');
 
-
 // Conexión a la base de datos
 mongoose.connection.openUri('mongodb://localhost:27017/hospitalDB', (err, res) => {
 
@@ -46,8 +45,6 @@ mongoose.connection.openUri('mongodb://localhost:27017/hospitalDB', (err, res) =
 // var serveIndex = require('serve-index');
 // app.use(express.static(__dirname + '/'))
 // app.use('/uploads', serveIndex(__dirname + '/uploads'));
-
-
 
 // Rutas
 app.use('/user', userRoutes);
